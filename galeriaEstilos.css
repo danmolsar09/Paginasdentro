@@ -1,5 +1,92 @@
 @charset "utf-8";
 /* CSS Document */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin-top: 10px;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    position: fixed;
+}
+nav{
+    top: -30px;
+    position: absolute;
+    left: auto;
+    right: auto;
+    margin: 20px auto;
+    max-width: 500px;
+    width: 90%;
+    position: fixed;
+}
+nav ul{
+    list-style: none;
+    position: fixed;
+}
+nav > ul{
+    display: table;
+    width: 1000px;
+    background: hotpink;
+    position: auto; 
+}
+nav > ul li{
+    display: table-cell;
+}
+/*sub menu con sus efectos*/
+nav > ul > li:hover > ul{
+    display: block;
+    height: 100%;
+}
+nav > ul > li > ul{
+    display: block;
+    position: absolute;
+    background: skyblue;
+    left: auto;
+    right: auto;
+    overflow: hidden;
+    height: 0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+nav > ul li a{
+    color: #FFFFFF;
+    display: block;
+    line-height: 20px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+/*efectos de los span*/
+nav > ul > li > ul >li a:hover{
+    background: #0C90F6;
+}
+nav > ul > li > a span{
+    background: #174459;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -55px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
 *{
 padding:0px;
 margin:0px;
@@ -88,7 +175,7 @@ margin:0px;
 padding:0px;}
 #c2{
 background-color:yellow;
-padding:10px;
+padding:2px;
 }
 #c1{
 background-color:yellow;
